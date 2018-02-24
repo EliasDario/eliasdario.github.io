@@ -72,7 +72,8 @@ nav ul li a:hover{
     background-color: rgba(0,0,0,0.4);
 }
 
-}
+   /* MAIN STYLE */
+
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
@@ -83,7 +84,7 @@ section {}
 figure+section, .forecast{
     width: 100%;
     min-width: 320px;
-    border: 5px solid black;
+    border: 5px solid #3333FF;
     border-radius: 10px;
     display: inline-table;
     font-size: 1.2em;
@@ -99,19 +100,20 @@ figure+section{
 }
 table{
     display: inline-table;
-    border: 1px solid #CB99FF;
 }
-
+table, td, th { 
+    border: 2px solid #3333FF 
+}
 .conditionsColumn1, .highlowColumn1, .conditionsColumn2, .highlowColumn2{
     font-size: 1.2em;
     float: left;
     width: 50%;
 
 }
-
+article img{
+    width: 20px;
+}
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
 }
 
 footer {
