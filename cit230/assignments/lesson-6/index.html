@@ -9,7 +9,7 @@
       <!-- external style references in the proper cascading order -->    
       <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>  <!-- Google API font reference -->
       <link rel="stylesheet" type="text/css" href="normalize.css"> <!-- normalize useragent/browser defaults -->
-       <link rel="stylesheet" type="text/css" href="small.css">    <!-- default styles - small/phone views -->
+      <link rel="stylesheet" type="text/css" href="small.css">    <!-- default styles - small/phone views -->
       <link rel="stylesheet" type="text/css" href="medium.css">  <!-- medium/tablet views -->
       <link rel="stylesheet" type="text/css" href="large.css">   <!-- large/wide/desktop views --> 
     </head>
@@ -22,6 +22,7 @@
       </header>
 
       <!-- site navigation use placeholder references -->
+      <!-- 
       <nav>
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul>
@@ -33,7 +34,19 @@
             <li><a href="#">Gallery</a></li>
         </ul>		
       </nav>
-
+      -->
+      <nav class="clearfix">
+          <button onclick="toggleMenu()">&#9776;</button>
+          <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>    
+            <li><a href="#">Storm</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+      </nav> 
+        
       <main>
         <h2>The City of Franklin</h2>
         <figure>
@@ -114,8 +127,7 @@
         </aside>
         <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
       </footer>
-
-      <script src="scripts/hamburger.js"></script>
+      <script src="hamburger.js"></script>
       <script src="scripts/currentdate.js"></script>
 
     </body>

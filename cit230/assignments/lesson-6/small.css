@@ -8,7 +8,6 @@ body {
     width: 90%;
     margin:auto;
     text-align: center;
-    
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -24,6 +23,7 @@ h1, h2, h3 {
 }
 header img {}
 header .subheading {
+    width: 100%;
     color: #66CDFF;
     font-size: 1.3em;
     margin-bottom: 10px;
@@ -31,35 +31,47 @@ header .subheading {
 
    /* NAV STYLE */
 
-nav{
-    background-color: #009BFF;
-    border: 2px solid #52471b;
+nav {
+    width: inherit;
+    margin: auto;
     box-shadow: 2px 2px 2px;
+    text-align: left;
+    background-color: #128FFF;
+    font-family: 'Abel';
 }
-nav{
-    font-weight: bold;
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    
 }
-nav a:link{
-    color: #000099;
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-nav a:visited{
-    color: #00FF98;
+nav ul.hide{
+    display: none;
 }
-nav a:hover{
-    color: #CB99FF;
-}
-nav a:active{
-    color: #fffafe;
-}
-nav a:link{
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
     text-decoration: none;
+    color: beige;
+    border-top: 1px solid rgba(0,0,0,0.3);  
+    font-size: 1.1em;
 }
-nav li{
-    list-style:none;
-    display: inline;
-    padding: 30px;
-    text-align: center;
-    font-size: 1.5em;
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
 }
 main {}
 main h2 {}
@@ -69,7 +81,7 @@ main figure img { width: 100%; }
 section {}
 
 figure+section, .forecast{
-    width: 80%;
+    width: 100%;
     min-width: 320px;
     border: 5px solid black;
     border-radius: 10px;
@@ -78,7 +90,7 @@ figure+section, .forecast{
 }
 .forecast{
     border: none;
-    width: 60%;
+    width: 100%;
     background-color: #009967;
     color: #00FF98;
 }
@@ -103,6 +115,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 }
 
 footer {
+    box-shadow: 2px 2px 2px;
     background-color: #3333FF;
     color: #99FFCB;
     border-radius: 10px;
@@ -112,3 +125,10 @@ footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
