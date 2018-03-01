@@ -1,0 +1,152 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    min-width: 420px;
+    font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+    font-family: "Abel";
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    border-radius: 10px;
+    text-align: left;
+}
+h1, h2, h3 {
+    color: #000099;
+}
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+header .subheading {
+    width: 100%;
+    color: #66CDFF;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+   /* NAV STYLE */
+
+nav {
+    width: 100%;
+    box-shadow: 2px 2px 2px;
+    text-align: left;
+    background-color: #128FFF;
+    font-family: 'Abel';
+}
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.hide{
+    display: none;
+}
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: beige;
+    border-top: 1px solid rgba(0,0,0,0.3);  
+    font-size: 1.1em;
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+   /* MAIN STYLE */
+
+main {}
+main h2 {}
+main figure { width: 100%; margin: 0;}
+main figure img { width: 100%; border-radius: 10px;}
+
+section {}
+
+figure+section, .forecast{
+    width: 100%;
+    min-width: 320px;
+    border: 5px solid #3333FF;
+    border-radius: 10px;
+    display: inline-table;
+    font-size: 1.2em;
+}
+.forecast{
+    border: none;
+    width: 100%;
+    background-color: #009967;
+    color: #00FF98;
+}
+figure+section{
+    margin-bottom: 20px;
+}
+
+/* TABLE STYLE */
+table{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+th{
+    background: #628ca6;
+}
+
+tr:nth-child(even){
+    background: #628ca6;
+}
+tr:nth-child(odd){
+    background: #7fb9c2;
+}
+
+table, td, th{ 
+    border: 2px solid #3333FF 
+}
+.conditionsColumn1, .highlowColumn1, .conditionsColumn2, .highlowColumn2{
+    font-size: 1.2em;
+    float: left;
+    width: 50%;
+
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+}
+
+footer {
+    box-shadow: 2px 2px 2px;
+    background-color: #3333FF;
+    color: #99FFCB;
+    border-radius: 10px;
+    
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
