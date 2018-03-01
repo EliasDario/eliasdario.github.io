@@ -105,12 +105,22 @@ figure+section{
 
 /* TABLE STYLE */
 table{
-    width: 100%;
     font-family: 'Ubuntu', sans-serif;
+    width: 70%;
 }
-
+table, td, th{ 
+    border: 2px solid #3333FF;
+}
 th{
     background: #628ca6;
+}
+
+thead tr:first-child{
+    font-size: 2em;
+}
+thead tr:nth-child(2){
+    font-size: 1.5em;
+    color: #e7ffed;
 }
 
 tr:nth-child(even){
@@ -119,9 +129,9 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background: #7fb9c2;
 }
-
-table, td, th{ 
-    border: 2px solid #3333FF 
+tfoot{
+    font-size: .8em;
+    font-weight: bold;
 }
 .conditionsColumn1, .highlowColumn1, .conditionsColumn2, .highlowColumn2{
     font-size: 1.2em;
