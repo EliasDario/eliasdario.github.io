@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
@@ -6,15 +5,10 @@
         padding: .6rem 1rem;}
     
   article p.town-article img { width: 29.333%; }
-  
-=======
-@media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  
-  nav ul li a{
-        padding: .6rem 1rem;}
+.grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 10px;}
     
-  article p.town-article img { width: 29.333%; }
-  
->>>>>>> fe87975f29506faf93e0bb6ed989df1262808f97
+.grid img:hover {box-shadow: 5px 5px 10px gray;}   
 }
