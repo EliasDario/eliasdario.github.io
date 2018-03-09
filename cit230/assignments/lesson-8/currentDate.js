@@ -1,4 +1,3 @@
-
 //---DIMANIC DATE OUTPUT----//
 function myFunction() {
     var d = new Date();
