@@ -125,6 +125,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 table{
     font-family: 'Ubuntu', sans-serif;
     width: 70%;
+    border-collapse: collapse;
 }
 table, td, th{ 
     border: 2px solid #3333FF;
