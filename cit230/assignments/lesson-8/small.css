@@ -120,15 +120,40 @@ article p.town-article img {  /* This structure refers to img elements that are 
     grid-gap: 10px;
 }
 
-/* TABLEBUILD STYLE */
+/* TABLE STYLE */
 
 table{
-    display: inline-table;
+    font-family: 'Ubuntu', sans-serif;
+    width: 70%;
 }
-table, td, th { 
+table, td, th{ 
     border: 2px solid #3333FF;
-    border-collapse: collapse;     
 }
+
+th{
+    background: #628ca6;
+}
+
+thead tr:first-child{
+    font-size: 2em;
+}
+thead tr:nth-child(2){
+    font-size: 1.5em;
+    color: #e7ffed;
+}
+
+tr:nth-child(even){
+    background: #628ca6;
+}
+tr:nth-child(odd){
+    background: #7fb9c2;
+}
+tfoot{
+    font-size: .8em;
+    font-weight: bold;
+}
+
+/* FOOTER STYLE */
 
 footer {
     box-shadow: 2px 2px 2px;
@@ -136,8 +161,6 @@ footer {
     color: #99FFCB;
     border-radius: 10px;
 }
-
-/* FOOTER STYLE */
 
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
