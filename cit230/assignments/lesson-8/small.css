@@ -124,34 +124,36 @@ article p.town-article img {  /* This structure refers to img elements that are 
 
 table{
     font-family: 'Ubuntu', sans-serif;
-    width: 70%;
+    width: 50%;
     border-collapse: collapse;
+    box-shadow: 10px 10px 15px #89a8bb;
 }
 table, td, th{ 
     border: 2px solid #3333FF;
-}
-
-th{
-    background: #628ca6;
+    padding: 8px 0 8px 0;
 }
 
 thead tr:first-child{
     font-size: 2em;
+    background: #7fb9c2;
 }
 thead tr:nth-child(2){
     font-size: 1.5em;
     color: #e7ffed;
-}
-
-tr:nth-child(even){
     background: #628ca6;
 }
-tr:nth-child(odd){
-    background: #7fb9c2;
+tbody tr:nth-child(even){
+    background: #e7ffed;
+}
+tbody tr:nth-child(odd){
+    background: #e7f0ed;
 }
 tfoot{
-    font-size: .8em;
-    font-weight: bold;
+    font-size: .8em;  
+    background: #7fb9c2;
+}
+#hg{
+    background: #628ca6;
 }
 
 /* FOOTER STYLE */
