@@ -85,7 +85,7 @@ main figure img { width: 100%; border-radius: 10px;}
 
 section {}
 
-figure+section, .forecast{
+figure+section, .forecast, input, textarea{
     width: 100%;
     min-width: 320px;
     border: 5px solid #3333FF;
@@ -154,6 +154,39 @@ tfoot{
 }
 #hg{
     background: #628ca6;
+}
+
+/* FORM STYLE */
+
+fieldset{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    display: inline;
+    padding: 10px;
+    border: none;
+    font-size: 1.2em;
+}
+}
+fieldset:last-child{
+    margin-bottom: 20px;
+}
+#radio{
+    display: flex;
+    flex-flow: column wrap;
+}
+input[type="radio"]{
+    margin-left: -150px;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+}
+input:focus{
+    background-color: #42f4e2;
 }
 
 /* FOOTER STYLE */
