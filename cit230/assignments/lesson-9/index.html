@@ -25,11 +25,11 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>    
-            <li class="active"><a href="stormCenter.html">Storm</a></li>
+            <li><a href="stormCenter.html">Storm</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav> 
@@ -51,28 +51,34 @@
             <figure>
                 <img src="images/rainy%20sky-6.jpg" alt="">
                 <figcaption>
-                    <h2>Franklin</h2>
-                    <p>Town stats</p>
-                    <p>Current temperature</p>
-                    <p>more info.</p>
+                    <h2 id="place">Franklin</h2>
+                    <p>Forecast: <span id="textForecast"></span></p>
+                    <p> Wind Speed in miles per hour: <span id="windSpeed"></span></p>
+                    <p>Current temperature <span id="currentTemp">30</span>&deg;</p>
+                    <p>Current Weather: <span id="currentWeather"></span></p>
+                    <img src="images/placeholder.png" alt="current weather icon" id="wi" class="weatherIcon">
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/sunnyField-6.jpg" alt="">
                 <figcaption>
-                    <h2>Greenville</h2>
-                    <p>Town stats</p>
-                    <p>Current temperature</p>
-                    <p>more info.</p>
+                    <h2 id="placeG">Greenville</h2>
+                    <p>Forecast: <span id="textForecastG"></span></p>
+                    <p> Wind Speed in miles per hour: <span id="windSpeedG"></span></p>
+                    <p>Current temperature <span id="currentTempG">30</span>&deg;</p>
+                    <p>Current Weather: <span id="currentWeatherG"></span></p>
+                    <img src="images/placeholderG.png" alt="current weather icon" id="wiG" class="weatherIcon">
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/umbrella-6.jpg" alt="">
                 <figcaption>
-                    <h2>Springfield</h2>
-                    <p>Town stats</p>
-                    <p>Current temperature</p>
-                    <p>more info.</p>
+                    <h2 id="placeS">Greenville</h2>
+                    <p>Forecast: <span id="textForecastS"></span></p>
+                    <p> Wind Speed in miles per hour: <span id="windSpeedS"></span></p>
+                    <p>Current temperature <span id="currentTempS">30</span>&deg;</p>
+                    <p>Current Weather: <span id="currentWeatherS"></span></p>
+                    <img src="images/placeholderS.png" alt="current weather icon" id="wiS" class="weatherIcon">
                 </figcaption>
             </figure>
         </div>
@@ -88,5 +94,6 @@
     </footer>
         <script src="hamburger.js"></script>
         <script src="currentDate.js"></script>
+        <script src="wu-weather.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
+/* HEADER STYLE */
 header {
     border-radius: 10px;
     text-align: left;
@@ -135,13 +136,17 @@ article p.town-article img {  /* This structure refers to img elements that are 
     grid-gap: 10px;
 }
 
+/* INDEX WEATHER CONDITION ICON STYLE */
+.weatherIcon{
+    width: 3rem;
+}
+
 /* TABLE STYLE */
 
 table{
-    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
     width: 50%;
     border-collapse: collapse;
-    box-shadow: 10px 10px 15px #89a8bb;
 }
 table, td, th{ 
     border: 2px solid #3333FF;
@@ -149,24 +154,9 @@ table, td, th{
 }
 
 thead tr:first-child{
-    font-size: 2em;
-    background: #7fb9c2;
+    font-size: 1.1em;
 }
-thead tr:nth-child(2){
-    font-size: 1.5em;
-    color: #e7ffed;
-    background: #628ca6;
-}
-tbody tr:nth-child(even){
-    background: #e7ffed;
-}
-tbody tr:nth-child(odd){
-    background: #e7f0ed;
-}
-tfoot{
-    font-size: .8em;  
-    background: #7fb9c2;
-}
+
 #hg{
     background: #628ca6;
 }
@@ -181,7 +171,7 @@ fieldset{
     padding: 10px;
     border: none;
     font-size: 1.2em;
-}
+
 }
 fieldset:last-child{
     margin-bottom: 20px;
