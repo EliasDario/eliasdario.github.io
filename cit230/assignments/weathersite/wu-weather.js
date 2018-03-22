@@ -5,7 +5,7 @@
 //FROM FEATURE: FORECAST//
 
 var request2 = new XMLHttpRequest();
-request2.open('GET', '//api.wunderground.com/api/2bd1927be404d108/forecast/q/MN/Franklin.json', true);
+request2.open('GET', '//api.wunderground.com/api/aeaf0d58b1a73e39/forecast/q/MN/Franklin.json', true);
 request2.send();
 
 request2.onload = function () {
@@ -19,7 +19,7 @@ request2.onload = function () {
 //FROM FEATURE: CONDITIONS//
 
 var weatherObj = new XMLHttpRequest();
-weatherObj.open('GET', '//api.wunderground.com/api/2bd1927be404d108/conditions/q/MN/Franklin.json', true);
+weatherObj.open('GET', '//api.wunderground.com/api/aeaf0d58b1a73e39/conditions/q/MN/Franklin.json', true);
 
 weatherObj.send();
 weatherObj.onload = function () {
@@ -54,7 +54,7 @@ weatherObj.onload = function () {
 //FROM FEATURE: FORECAST//
 
 var requestG = new XMLHttpRequest();
-requestG.open('GET', '//api.wunderground.com/api/2bd1927be404d108/forecast/q/TX/Greenville.json', true);
+requestG.open('GET', '//api.wunderground.com/api/aeaf0d58b1a73e39/forecast/q/TX/Greenville.json', true);
 requestG.send();
 
 requestG.onload = function () {
@@ -68,7 +68,7 @@ requestG.onload = function () {
 //FROM FEATURE: CONDITIONS//
 
 var weatherObjG = new XMLHttpRequest();
-weatherObjG.open('GET', '//api.wunderground.com/api/2bd1927be404d108/conditions/q/TX/Greenville.json', true);
+weatherObjG.open('GET', '//api.wunderground.com/api/aeaf0d58b1a73e39/conditions/q/TX/Greenville.json', true);
 
 weatherObjG.send();
 weatherObjG.onload = function () {
@@ -103,7 +103,7 @@ weatherObjG.onload = function () {
 //FROM FEATURE: FORECAST//
 
 var requestS = new XMLHttpRequest();
-requestS.open('GET', '//api.wunderground.com/api/2bd1927be404d108/forecast/q/OR/Springfield.json', true);
+requestS.open('GET', '//api.wunderground.com/api/aeaf0d58b1a73e39/forecast/q/OR/Springfield.json', true);
 requestS.send();
 
 requestS.onload = function () {
@@ -117,7 +117,7 @@ requestS.onload = function () {
 //FROM FEATURE: CONDITIONS//
 
 var weatherObjS = new XMLHttpRequest();
-weatherObjS.open('GET', '//api.wunderground.com/api/2bd1927be404d108/conditions/q/OR/Springfield.json', true);
+weatherObjS.open('GET', '//api.wunderground.com/api/aeaf0d58b1a73e39/conditions/q/OR/Springfield.json', true);
 
 weatherObjS.send();
 weatherObjS.onload = function () {
