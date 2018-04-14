@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Mountain Spoke | Home Page</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Home Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+		<link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+		<link href="largeStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon.ico" rel="icon"/>
+    </head>	
+    
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="Images/logo.png" alt="logo"/>
+        </header>
+        
+        <nav class="clearfix">
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="Images/action-bicycle-bike-web.jpg" alt="kid riding his mountain bike">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/action-bicycle-bike2-web.jpg" alt="action mountain bike">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/bicycle-web.jpg" alt="bicycle and landscape">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/bicycle-bike-forest-web.jpg" alt="bicycle in the forest">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/bicycle-bike-daylight-web.jpg" alt=" bicycle in the mountain path">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/montana-skyland-web.jpg" alt="beautiful Montana mountains">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/welcomeToBozeman-web-1028-medium.jpg" alt="Welcome to Boozeman">
+                </div>
+            </div>
+            
+            <div class="texts">
+                <blockquote>"When you do a car rapair to a beetle, you see a response from the car. 
+				The car responds to the love you give it. 
+				A modern car is a lot of plastic and metal, it has nothing to do with it. 
+				The beetle seems to be alive. In addition to that, repairing a beetle is an activity 
+				that acts as mental hygiene." ~ Marcelo Tonella.
+                </blockquote>
+			<div id="i" class="callAction"></div>
+			<div class="callAction"></div>
+                
+            </div>
+        </main>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">Contact</a></li>
+                    <li><a href="//eliashowsyou.com/comm310website/styleguide/styleguide.html">Style Guide</a></li>
+                    <li><a href="//eliashowsyou.com/comm310website/practice/index.html">Practice</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+    <script src="currentDate.js"></script>
+	<script src="hamburger menu.js"></script>
+    </body>
+</html>

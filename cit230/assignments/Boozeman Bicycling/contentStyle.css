@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+* {box-sizing: border-box;}
+
+body{
+    margin: 0px;
+    font-size: 1.5em;
+    background-color: #1b1b1b;
+    font-family: 'Abel', sans-serif;
+}
+header{
+    text-align: center;
+}
+header img{
+    margin-top: 50px;
+
+}
+#topbox{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #434343;
+    box-shadow: 5px 5px 10px;
+}
+
+/* OTHER LINKS STYLE */
+
+a{
+    text-decoration: none;
+    text-shadow: none;
+}
+a:link{
+    color: #fefcfc;
+}
+a:visited{
+    color: #35fd1a;
+}
+a:hover{
+    color: #f5fe08;
+}
+a:active{
+    color: #d0d1c0;
+}
+
+/* NAV STYLE */
+
+nav{
+    text-shadow: 2px 2px 1px black;
+    font-weight: bold;
+    background-image: linear-gradient(#434343, #1b1b1b);
+    border: 2px solid #1b1b1b;
+    box-shadow: 5px 5px 10px black;  
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a:link{
+    color: #fefcfc;
+}
+nav a:visited{
+    color: #35fd1a;
+}
+nav a:hover{
+    color: #f5fe08;
+}
+nav a:active{
+    color: #d0d1c0;
+}
+li a.active{
+    color: #d0d1c0;
+}
+/* NAV DROPDOWN MENU STYLE */
+
+#plink {
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding-right: 15px;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+nav ul li~li:hover .dropdown-content{
+    display: block;
+}
+
+/* MAIN STYLE */
+
+main{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 10px;
+    margin: auto;
+}
+
+/* TEXT COLOR */
+
+p, blockquote, figcaption, h1, h2, h3, h4, h5{
+    color: aliceblue;
+    text-align: justify;
+    text-shadow: 2px 2px 1px black;
+}
+
+/* FIGURES & ARTICLE CLASS STYLE */
+figure, .article{
+    margin: auto;
+    background-color: #ea5b0c;
+    border: 5px solid #434343;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* HIGH & LOW END STYLE */
+
+.figure figure{
+    width: 80%;
+    margin-top: 5px;
+    padding: 0 40px 20px 40px; 
+}
+.figure img {
+    box-shadow: 5px 5px 10px black;
+    width: 100%;
+}
+.figure h4{
+    margin: 5px;
+    font-family: sans-serif;
+    color: grey;
+    text-align: right;
+}
+.figure img:hover {box-shadow: 8px 8px 10px black;}
+
+/* SPECIAL IMAGE ADJUSTING */
+
+main img{
+    height: 400px;
+}
+
+/* MYPATH & TONELLA-HIGGINS STYLE */
+
+section{
+    margin: 5px;
+}
+section img{
+    border-radius: 5px;
+}
+.article{
+    display: flex;
+}
+.article figure{
+    border-style: none;
+}
+.article iframe{
+    width: 635px;
+    height: 300px;
+}
+.article:last-child{
+    flex-direction: row-reverse;
+    margin-top: 5px;
+}
+.text{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    padding-left: 10px;
+}
+/* MYPATH STYLE */
+
+.myBeetles{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.myBeetles figure:last-child{
+    margin-left: 5px;   
+}
+.myBeetles figure{
+    width: 50%;
+}
+
+/* TONELLA-HIGGINS STYLE */
+ 
+.tonhig figcaption, .tonhig img{
+    width: 100%;
+}
+
+#text1{
+    background-image: url(images/tonella-small-logo.png);
+}
+.figc{
+    font-size: .8em;
+}
+#text2{
+    background-image: url(images/bug-me-video-logo-small2.jpg);
+}
+
+/* FOOTER STYLE */
+
+footer{
+    font-size: .8em;
+}
+footer nav{
+    width: 80%;
+    margin: auto;
+}
+footer div{
+    background-color: #313131;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div p{
+    display: inline;
+}
