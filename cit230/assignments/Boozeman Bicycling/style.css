@@ -3,39 +3,44 @@
 body{
     margin: 0px;
     font-size: 1.5em;
-    background-color: #1b1b1b;
+    background-color: #9F9392;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
-header{
+
+/*TEXT*/
+h1, h2, h3, thead tr:first-child{
+    font-family: 'IBM Plex Serif', serif;
+}
+h1{
+    margin: 10px auto 0px;
+    font-size: 3em;
+    color: #000000;
     text-align: center;
 }
-header img{
-    margin-top: 50px;
+blockquote{
+    text-align: center;
 }
+
 #topbox{
     z-index: -1;
     position: absolute;
     width: 100%;
     height: 100px;
     margin-top: 100px;
-    background-color: #434343;
+    background-color: #493E40;
     box-shadow: 5px 5px 10px;
 }
-main{
-    padding-top: 60px;
-    background-color: #ea5b0c; 
-    border: 5px solid #434343;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
 
+header{
+    text-align: center;
+    margin-top: 20px;
+}
 /* NAV STYLE */
 
-nav {
+nav{
     width: 100%;
-    box-shadow: 2px 2px 2px;
+
 }
 nav button{
     margin: .2rem 2%;
@@ -81,66 +86,98 @@ nav a:link{
 li a.active{
     color: #d0d1c0;
 }
+
 /* MAIN STYLE */
+main{
+    background-color: #9E2F2F; 
+    border: 5px solid #434343;
+    border-radius: 10px;
+}
+
 /* SLIDESHOW STYLE */
 /* Slideshow container */
 
-.slideshow-container, .mImage, .smallBoxes-container {
+.slideshow-container/*TOUR*/, .mImage/*TOUR*/, .smallBoxes-container/*TOUR*/ {
     width: 100%;
     position: relative;
     margin: auto;
+    min-width: 320px;
 }
 /*INDEX*/
 /* Hide the images by default */
 .mySlides {
     display: none;
 }
+main p, blockquote, figcaption{
+    text-align: center;
+    font-size: 1.3em;
+}
+#joinIn{
+    display: block;
+    margin: 10px auto;
+    font-size: 1.3em;
+    width: 250px;
+    height: 100px;
 
-/*INDEX + TOUR + EVENTS*/
+}
 
+/* BOTH LINES DIVIDING SECTIONS IN TOURS PAGE*/
+hr{
+    border: 4px solid #B37F26;
+}
+
+/*INDEX + TOUR + EVENTS + SALES + SERVICES*/
 .mySlides img, .mImage img{
     width: 100%;
     height: 500px;
     border-radius: 5px;
+    border: 5px solid #434343;
 }
-.smallBoxes-container, .models, .mediumBoxes/*SALES*/{
-    display: flex;
-    justify-content: space-between;
-}
-.smallBoxes, .mediumBoxes/*SALES*/{
-    background-color: aqua;
+
+.smallBoxes{
+    background-color: #B37F26;
     border-radius: 10px;
     box-shadow: 5px 5px 5xp black;
-    
-}
-.smallBoxes{
     width: 200px;
     height: 200px;
+    border: 5px solid #434343;
+    font-size: .8em;
+}
+.smallBoxes:first-child{
+    margin-left: 33px;
+}
+.smallBoxes:last-child{
+    margin-right: 33px;
 }
 
-/*SALES + SERVICES*/
-
-.mediumBoxes{
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 400px;
+.smallBoxes p{
+    text-align: center;
+}
+.smallBoxes p:first-child{
+    font-weight: 600;
+}
+.smallBoxes button{
+    position: relative;
+    left: 30px;
 }
 .button{
-    width: 160px;
-    height: 100px;
-    background-color: darkslategray;
+    width: 140px;
+    height: 60px;
+    background-color: darkgreen;
     border-radius: 10px;
     box-shadow: 5px 5px 5xp black;
     color: aliceblue;
-    font-size: .9em;
+    font-size: .8em;
     text-align: center;
-  
-    
 }
 
+/*SALES MARGIN BOTTOM*/
+
+section:last-child{
+    margin-bottom: 10px;
+}
 /*CONTACT*/
+
 fieldset label{
     display: block;
 }
@@ -149,13 +186,34 @@ fieldset iframe{
     height: 300px;
 }
 
-/* FADING ANIMATION */
+/* SERVICES TABLE STYLE */
 
+table{
+    margin: 10px auto;
+    min-width: 320px;
+    width: 60%;
+    border-collapse: collapse;
+}
+table, td, th{ 
+    border: 3px solid #9F9392;
+    padding: 8px 0 8px 0;
+}
+
+thead tr:first-child{
+    font-size: 1em;
+    text-align: center;
+    color: whitesmoke;
+}
+tfoot td{
+    text-align: center;
+}
+
+/* FADING ANIMATION */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.0s;
+    -webkit-animation-duration: 2.0s;
     animation-name: fade;
-    animation-duration: 1.0s;
+    animation-duration: 2.0s;
 }
 
 @-webkit-keyframes fade {
@@ -167,30 +225,6 @@ fieldset iframe{
     from {opacity: .4} 
     to {opacity: 1}
 }
-/* FOOTER STYLE */
-
-footer{
-    font-size: .8em;
-}
-footer nav{
-    width: 80%;
-    margin: auto;
-    padding-top: 10px;
-}
-footer div{
-    background-color: #313131;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-footer div p{
-    display: inline;
-}
-
-/* ABOUT PAGE STYLE */
-
 
 /* CONTACT FORM STYLE */
 
@@ -205,9 +239,9 @@ form{
     color: aliceblue;
 }
 form fieldset{
+    width: 100%;
     background-image: url(images/spiration%20dark.png);
     border-radius: 5px;
-    width: 600px;
     margin: auto;
 } 
 
@@ -218,6 +252,8 @@ form fieldset:last-child{
     margin-bottom: 5px;
 }
 form input{
+    width: 90%;
+    min-width: 320px;
     font-family: inherit;
     font-size: 1em;
     margin: 10px auto;
@@ -238,6 +274,28 @@ form input[type="checkbox"]{
 
 #button:active {
     background: green;
+}
+/* FOOTER STYLE */
+
+footer{
+    font-size: .8em;
+}
+footer nav{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+footer div{
+    background-color: #493E40;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div p{
+    color: azure;
+    display: inline;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

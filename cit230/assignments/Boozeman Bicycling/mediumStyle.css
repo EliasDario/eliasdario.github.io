@@ -17,4 +17,12 @@ nav ul li a{
     border-right: 1px solid rgba(0,0,0,0.3);
     padding: .8rem 1rem;
 }
+
+.smallBoxes-container, .mySlides, .buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+     thead tr:first-child{
+         font-size: 1.5em;
 }
