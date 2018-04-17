@@ -21,8 +21,23 @@ nav ul li a{
 .smallBoxes-container, .mySlides, .buttons{
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
 }
-     thead tr:first-child{
+.smallBoxes:first-child{
+         margin-left: 33px;
+}
+.smallBoxes:last-child{
+         margin-right: 33px;
+}
+thead tr:first-child{
          font-size: 1.5em;
+}
+     /*H1 SIZE*/
+     
+h1{
+   font-size: 3em;      
+}
+     /*BUTTON TEXT SIZE*/
+     
+.button{
+    font-size: 1em;     
 }

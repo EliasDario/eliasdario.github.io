@@ -5,7 +5,7 @@ body{
     font-size: 1.5em;
     background-color: #9F9392;
     font-family: 'Montserrat', sans-serif;
-    text-align: justify;
+    text-align: justify; 
 }
 
 /*TEXT*/
@@ -14,9 +14,10 @@ h1, h2, h3, thead tr:first-child{
 }
 h1{
     margin: 10px auto 0px;
-    font-size: 3em;
+    font-size: 2em;
     color: #000000;
     text-align: center;
+    
 }
 blockquote{
     text-align: center;
@@ -40,7 +41,7 @@ header{
 
 nav{
     width: 100%;
-
+    background-image: linear-gradient(#9F9392, #1b1b1b);
 }
 nav button{
     margin: .2rem 2%;
@@ -89,19 +90,25 @@ li a.active{
 
 /* MAIN STYLE */
 main{
-    background-color: #9E2F2F; 
+    background-color: #9E2F2F;
     border: 5px solid #434343;
     border-radius: 10px;
+    min-width: 320px;
 }
 
 /* SLIDESHOW STYLE */
 /* Slideshow container */
 
-.slideshow-container/*TOUR*/, .mImage/*TOUR*/, .smallBoxes-container/*TOUR*/ {
+.slideshow-container/*TOUR*/, .mImage/*TOUR*/{
     width: 100%;
     position: relative;
     margin: auto;
     min-width: 320px;
+}
+.smallBoxes-container/*TOUR*/{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 /*INDEX*/
 /* Hide the images by default */
@@ -144,10 +151,10 @@ hr{
     font-size: .8em;
 }
 .smallBoxes:first-child{
-    margin-left: 33px;
+    margin-left: 0px;
 }
 .smallBoxes:last-child{
-    margin-right: 33px;
+    margin-right: 0px;
 }
 
 .smallBoxes p{
@@ -163,7 +170,7 @@ hr{
 .button{
     width: 140px;
     height: 60px;
-    background-color: darkgreen;
+    background-image: linear-gradient(#006622, #493E40);
     border-radius: 10px;
     box-shadow: 5px 5px 5xp black;
     color: aliceblue;
@@ -180,6 +187,7 @@ section:last-child{
 
 fieldset label{
     display: block;
+    color: #B37F26;
 }
 fieldset iframe{
     width: 400px;
@@ -189,10 +197,12 @@ fieldset iframe{
 /* SERVICES TABLE STYLE */
 
 table{
+    color: #B37F26;
     margin: 10px auto;
     min-width: 320px;
     width: 60%;
     border-collapse: collapse;
+    background-image: url(images/spiration%20dark.png);
 }
 table, td, th{ 
     border: 3px solid #9F9392;
@@ -239,12 +249,15 @@ form{
     color: aliceblue;
 }
 form fieldset{
+    min-width: 320px;
     width: 100%;
     background-image: url(images/spiration%20dark.png);
     border-radius: 5px;
     margin: auto;
 } 
-
+form fieldset iframe{
+    width: inherit;
+}
 /* SPACE BETWEEN THE FIELDSETS */
 
 form fieldset:last-child{
@@ -281,9 +294,10 @@ footer{
     font-size: .8em;
 }
 footer nav{
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding-top: 10px;
+    text-align: center;
 }
 footer div{
     background-color: #493E40;
