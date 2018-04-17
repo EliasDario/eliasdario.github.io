@@ -119,7 +119,7 @@ main p, blockquote, figcaption{
     text-align: center;
     font-size: 1.3em;
 }
-#joinIn{
+.joinIn{
     display: block;
     margin: 10px auto;
     font-size: 1.3em;
